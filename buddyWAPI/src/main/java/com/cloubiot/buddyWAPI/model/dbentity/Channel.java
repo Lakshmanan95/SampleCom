@@ -14,9 +14,6 @@ public class Channel {
 	private String location;
 	private String language;
 	private String formJson;
-	private String channelImg;
-	private String channelLink;
-	
 	public ObjectId get_id() {
 		return _id;
 	}
@@ -46,18 +43,6 @@ public class Channel {
 	}
 	public void setFormJson(String formJson) {
 		this.formJson = formJson;
-	}
-	public String getChannelImg() {
-		return channelImg;
-	}
-	public void setChannelImg(String channelImg) {
-		this.channelImg = channelImg;
-	}
-	public String getChannelLink() {
-		return channelLink;
-	}
-	public void setChannelLink(String channelLink) {
-		this.channelLink = channelLink;
 	}
 	
 	

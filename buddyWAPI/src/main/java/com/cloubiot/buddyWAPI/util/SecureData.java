@@ -28,33 +28,33 @@ public class SecureData {
 
 	//Main driver to allow the administrator to encrypt from a prompt
 	//Note that decrypt is not exposed.
-//	public static void main(String[] args) throws Exception{
-//		String[] userInputs = getUserInputs();
-//		if (userInputs == null ) {
-//			return;
-//		}
-//		SecureData en = null;
-//		String encrypted = null;
-//		try {
-//			en = new SecureData();
-//			String pwd = en.decrypt("83xPmMMFbvPoJX/56ckYKQ==");
-//			System.out.println("Admin password DEV: "+pwd);
-//			String pwd1 = en.decrypt("xgMRfiKvoPkGEBk3fGv9ig==");
-//			System.out.println("Admin password QA: "+pwd1);                                                        
-//			String pwd2 = en.decrypt("G/mOP9sczHoGEBk3fGv9ig==");
-//			System.out.println("Admin password INT: "+pwd2);
-//			encrypted = en.encrypt(userInputs[0]);
-//		} catch (Exception e) {                                                    
-//			e.printStackTrace();
-//			return;
-//		} 
-//		System.out.println("Encrypted value for (" + userInputs[0] + ") is =[" + encrypted + "]");
-//		
-//		
-//		System.out.println("Encryped value:");
-//		System.out.println("Decryped value:");
-//		 
-//	}
+	public static void main(String[] args) throws Exception{
+		String[] userInputs = getUserInputs();
+		if (userInputs == null ) {
+			return;
+		}
+		SecureData en = null;
+		String encrypted = null;
+		try {
+			en = new SecureData();
+			String pwd = en.decrypt("83xPmMMFbvPoJX/56ckYKQ==");
+			System.out.println("Admin password DEV: "+pwd);
+			String pwd1 = en.decrypt("xgMRfiKvoPkGEBk3fGv9ig==");
+			System.out.println("Admin password QA: "+pwd1);                                                        
+			String pwd2 = en.decrypt("G/mOP9sczHoGEBk3fGv9ig==");
+			System.out.println("Admin password INT: "+pwd2);
+			encrypted = en.encrypt(userInputs[0]);
+		} catch (Exception e) {                                                    
+			e.printStackTrace();
+			return;
+		} 
+		System.out.println("Encrypted value for (" + userInputs[0] + ") is =[" + encrypted + "]");
+		
+		
+		System.out.println("Encryped value:");
+		System.out.println("Decryped value:");
+		 
+	}
 
 	public static String[] getUserInputs(){     
 		BufferedReader br = null;
